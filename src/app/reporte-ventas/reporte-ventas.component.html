@@ -1,0 +1,32 @@
+<div class="reporte-ventas-container">
+    <h2>Reporte de Ventas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Rating</th>
+          <th>Categorías</th>
+          <th>Precio</th>
+          <th>Jugadores</th>
+          <th>Imagen</th>
+          <th>Vendidos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let producto of reporteVentas">
+          <td>{{ producto.id }}</td>
+          <td>{{ producto.name }}</td>
+          <td>{{ producto.description }}</td>
+          <td>{{ producto.rating }}</td>
+          <td>{{ producto.categories }}</td>
+          <td>{{ producto.price }}</td>
+          <td>{{ producto.players }}</td>
+          <td><img [src]="producto.image" alt="{{ producto.name }}" height="50" /></td>
+          <td>{{ producto.sold }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
