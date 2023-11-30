@@ -4,7 +4,7 @@ import { ReporteVentasService } from './reporte-ventas.service';
 @Component({
   selector: 'app-reporte-ventas',
   templateUrl: './reporte-ventas.component.html',
-  styleUrls: ['./reporte-ventas.component.css'],
+  styleUrls: ['./reporte-ventas.component.scss'],
 })
 
 export class ReporteVentasComponent implements OnInit {
@@ -20,5 +20,9 @@ export class ReporteVentasComponent implements OnInit {
     this.reporteVentasService.getReporteVentas().subscribe((data) => {
       this.reporteVentas = data;
     });
+  }
+
+  getTotalSales(): number {
+    return this.reporteVentas.reduce((total, game) => total + game.sold * game.price, 0);
   }
 }
