@@ -1,38 +1,35 @@
-/* dashboard.component.scss */
-
 .dashboard-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
-    .company-info {
-      flex: 1;
-  
-      h2 {
-        color: #333;
-      }
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .company-info {
+    flex: 1;
+
+    h2 {
+      color: #333;
     }
-  
-    .sales-summary {
-      flex: 1;
-      margin-left: 20px;
-  
-      h3 {
-        color: #333;
-      }
-  
-      ul {
-        list-style-type: none;
-        padding: 0;
-  
-        li {
-          margin-bottom: 10px;
-          color: #555;
-        }
+  }
+
+  .sales-summary {
+    flex: 1;
+    margin-left: 20px;
+
+    h3 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+        color: #555;
       }
     }
   }
-  
+}

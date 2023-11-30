@@ -1,18 +1,16 @@
-<!-- dashboard.component.html -->
-
 <section class="dashboard-container">
   <div class="company-info">
     <h2>Bienvenido a Play&Win Ventas</h2>
-    <p>Tu destino principal para compra de Videojuegos.</p>
+    <p>El mejor sitio para comprar Videojuegos.</p>
     <p>.</p>
   </div>
 
   <div class="sales-summary">
     <h3>Total de Ventas</h3>
     <ul>
-      <li>Total Games Sold: {{ getSales() }}</li>
-      <li>Total Revenue: ${{ getTotalSales() | number :'1.2-2' }}</li>
-      <li>Top-selling Genre: {{ topSellingGenre }}</li>
+      <li>Total de Juegos Vendidos: {{ getSales() }}</li>
+      <li>Ganancia Total: ${{ getTotalSales() | number : "1.2-2" }}</li>
+      <li>Top Genero Vendido: {{ topSellingGenre }}</li>
     </ul>
   </div>
 </section>

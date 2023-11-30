@@ -6,7 +6,6 @@ import { ReporteVentasService } from './reporte-ventas.service';
   templateUrl: './reporte-ventas.component.html',
   styleUrls: ['./reporte-ventas.component.scss'],
 })
-
 export class ReporteVentasComponent implements OnInit {
   reporteVentas: any[] = [];
 
@@ -23,6 +22,9 @@ export class ReporteVentasComponent implements OnInit {
   }
 
   getTotalSales(): number {
-    return this.reporteVentas.reduce((total, game) => total + game.sold * game.price, 0);
+    return this.reporteVentas.reduce(
+      (total, game) => total + game.sold * game.price,
+      0
+    );
   }
 }
